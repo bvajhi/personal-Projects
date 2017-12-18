@@ -6,15 +6,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.SearchSceneController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="520.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.SearchSceneController">
    <children>
       <Pane layoutX="207.0" prefHeight="360.0" prefWidth="311.0">
          <children>
-            <TextField editable="false" layoutY="1.0" prefHeight="360.0" prefWidth="311.0" />
+            <TextField editable="false" layoutX="6.0" layoutY="7.0" prefHeight="305.0" prefWidth="300.0" />
          </children>
       </Pane>
-      <TextArea prefHeight="38.0" prefWidth="206.0" />
-      <Button layoutX="8.0" layoutY="38.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="69.0" text="Search" />
-      <Button layoutX="8.0" layoutY="87.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="69.0" text="Back" />
+      <TextArea layoutX="8.0" layoutY="8.0" prefHeight="38.0" prefWidth="191.0" />
+      <Button layoutX="8.0" layoutY="66.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="69.0" text="Search" />
+      <Button layoutX="8.0" layoutY="115.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="69.0" text="Back" />
    </children>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="outsideBorder" />
+   </styleClass>
 </Pane>
