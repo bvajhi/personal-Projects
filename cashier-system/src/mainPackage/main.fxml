@@ -14,12 +14,12 @@
       <Pane layoutX="264.0" prefHeight="400.0" prefWidth="336.0">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="334.0" prefHeight="18.0" prefWidth="324.0" text="Sub Total: $0" textAlignment="CENTER" />
-            <TextField fx:id="cart" editable="false" layoutX="24.0" layoutY="8.0" prefHeight="315.0" prefWidth="300.0" />
             <Label alignment="CENTER" layoutY="352.0" prefHeight="18.0" prefWidth="318.0" text="Tax: $0" />
             <Label alignment="CENTER" layoutY="370.0" prefHeight="11.0" prefWidth="324.0" text="Total: $0" />
+            <TextArea fx:id="cart" editable="false" layoutX="-3.0" layoutY="8.0" prefHeight="324.0" prefWidth="330.0" />
          </children>
       </Pane>
-      <TextArea layoutX="7.0" layoutY="6.0" prefHeight="63.0" prefWidth="223.0" />
+      <TextArea fx:id="upc" layoutX="7.0" layoutY="6.0" prefHeight="63.0" prefWidth="223.0" />
       <Button layoutX="14.0" layoutY="86.0" mnemonicParsing="false" text="Add To Cart" />
       <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" text="Check Price" />
       <Button layoutX="14.0" layoutY="166.0" mnemonicParsing="false" text="Check Availability" />

@@ -1,10 +1,13 @@
 package mainPackage;
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import  java.awt.*;
 public class SearchSceneController {
+
 
 
     public void goBack()throws  Exception{
@@ -13,6 +16,7 @@ public class SearchSceneController {
 
         //window.setScene(new Scene(root, 300, 275));
         Main.getWindow().setScene(new Scene(root, 600, 400));
+
 
 
     }
