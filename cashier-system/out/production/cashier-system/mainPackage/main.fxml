@@ -13,18 +13,18 @@
    <children>
       <Pane layoutX="264.0" prefHeight="400.0" prefWidth="336.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="334.0" prefHeight="18.0" prefWidth="324.0" text="Sub Total: $0" textAlignment="CENTER" />
-            <Label alignment="CENTER" layoutY="352.0" prefHeight="18.0" prefWidth="318.0" text="Tax: $0" />
-            <Label alignment="CENTER" layoutY="370.0" prefHeight="11.0" prefWidth="324.0" text="Total: $0" />
+            <Label fx:id="subTotal" alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="334.0" prefHeight="18.0" prefWidth="324.0" text="Sub Total: $0" textAlignment="CENTER" />
+            <Label fx:id="tax" alignment="CENTER" layoutY="352.0" prefHeight="18.0" prefWidth="318.0" text="Tax: $0" />
+            <Label fx:id="total" alignment="CENTER" layoutY="370.0" prefHeight="11.0" prefWidth="324.0" text="Total: $0" />
             <TextArea fx:id="cart" editable="false" layoutX="-3.0" layoutY="8.0" prefHeight="324.0" prefWidth="330.0" />
          </children>
       </Pane>
       <TextArea fx:id="upc" layoutX="7.0" layoutY="6.0" prefHeight="63.0" prefWidth="223.0" />
-      <Button layoutX="14.0" layoutY="86.0" mnemonicParsing="false" text="Add To Cart" />
+      <Button layoutX="14.0" layoutY="86.0" mnemonicParsing="false" onAction="#addToCartAction" text="Add To Cart" />
       <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" text="Check Price" />
       <Button layoutX="14.0" layoutY="166.0" mnemonicParsing="false" text="Check Availability" />
       <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" onAction="#gotoSearchScene" text="Look up Product" />
-      <Button layoutX="133.0" layoutY="86.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="83.0" text="Total" />
+      <Button layoutX="133.0" layoutY="86.0" mnemonicParsing="false" onAction="#totalAction" prefHeight="27.0" prefWidth="83.0" text="Total" />
    </children>
    <styleClass>
       <String fx:value="background" />
