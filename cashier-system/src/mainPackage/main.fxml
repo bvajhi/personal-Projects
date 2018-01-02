@@ -21,8 +21,8 @@
       </Pane>
       <TextArea fx:id="upc" layoutX="7.0" layoutY="6.0" prefHeight="63.0" prefWidth="223.0" />
       <Button layoutX="14.0" layoutY="86.0" mnemonicParsing="false" onAction="#addToCartAction" text="Add To Cart" />
-      <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" text="Check Price" />
-      <Button layoutX="14.0" layoutY="166.0" mnemonicParsing="false" text="Check Availability" />
+      <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#checkPriceAction" text="Check Price" />
+      <Button layoutX="14.0" layoutY="166.0" mnemonicParsing="false" onAction="#checkAvailability" text="Check Availability" />
       <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" onAction="#gotoSearchScene" text="Look up Product" />
       <Button layoutX="133.0" layoutY="86.0" mnemonicParsing="false" onAction="#totalAction" prefHeight="27.0" prefWidth="83.0" text="Total" />
    </children>
